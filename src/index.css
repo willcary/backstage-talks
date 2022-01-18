@@ -1,13 +1,172 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/* ----------------- General ------------------- */
+:root {
+  --clr-teal: #00c1b5;
+  --clr-yellow: #ffbe00;
+  --clr-red: #e30512;
+  --clr-orange: #ff651a;
+  --clr-blue: #1d3fbb;
+  --clr-dark: #251d20;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 18px;
+  color: var(--clr-dark);
+  background-color: var(--clr-red);
+}
+
+p {
+  font-weight: bold;
+}
+
+a {
+  color: var(--clr-dark);
+}
+
+a:hover {
+  color: var(--clr-dark);
+}
+
+/* ----------------- Header ------------------- */
+
+header > img {
+  width: 160px;
+}
+
+header {
+  position: absolute;
+  left: 15px;
+  top: 15px;
+}
+
+@media (min-width: 767px) {
+  header > img {
+    width: 260px;
+  }
+}
+
+@media (min-width: 992px) {
+  header {
+    position: fixed;
+  }
+}
+
+/* ----------------- Main ------------------- */
+main {
+  text-align: center;
+}
+
+section {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.section-small {
+  font-size: 15px;
+}
+
+.section-small a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.issue-img {
+  width: 80%;
+  max-width: 420px;
+  height: auto;
+}
+
+#issue-5 {
+  background-color: var(--clr-teal);
+}
+#issue-4 {
+  background-color: var(--clr-orange);
+}
+#issue-3 {
+  background-color: var(--clr-yellow);
+}
+#issue-2 {
+  background-color: var(--clr-blue);
+}
+#issue-1 {
+  background-color: var(--clr-red);
+}
+
+/* ----------------- Footer ------------------- */
+footer {
+  background-color: var(--clr-red);
+  text-align: center;
+}
+
+.description a:hover {
+  text-decoration: none;
+}
+
+.contact {
+  position: fixed;
+}
+
+.menu {
+  display: none;
+  list-style: none;
+}
+
+.menulink {
+  text-decoration: none;
+}
+
+.contact > a {
+  text-decoration: none;
+}
+
+.menulink:hover,
+.contact > a:hover {
+  text-decoration: underline;
+}
+
+@media (min-width: 992px) and (min-height: 650px) {
+  footer {
+    text-align: left;
+  }
+
+  .menu,
+  .description,
+  .contact {
+    position: fixed;
+  }
+
+  .menu {
+    display: block;
+    position: fixed;
+    right: 15px;
+    bottom: 0;
+  }
+
+  .description {
+    max-width: 320px;
+    position: fixed;
+    left: 15px;
+    bottom: 0;
+  }
+
+  .contact {
+    position: fixed;
+    right: 15px;
+    top: 15px;
+  }
 }
