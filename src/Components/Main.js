@@ -13,31 +13,31 @@ const Main = () => {
                 img={issue5} 
                 id="issue-5" 
                 number="5" 
-                available="true" 
+                available={true} 
             />
             <Issue 
                 img={issue4} 
                 id="issue-4" 
                 number="4" 
-                available="true" 
+                available={true} 
             />
             <Issue 
                 img={issue3} 
                 id="issue-3" 
                 number="3" 
-                available="true" 
+                available={true} 
             />
             <Issue 
                 img={issue2} 
                 id="issue-2" 
                 number="2" 
-                available="true" 
+                available={true} 
             />
             <Issue 
                 img={issue1} 
                 id="issue-1" 
                 number="1" 
-                available="false" 
+                available={false} 
             />
         </main>
     )
