@@ -10,6 +10,7 @@
 
 html {
   scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
 }
 
 * {
@@ -36,6 +37,12 @@ a {
 
 a:hover {
   color: var(--clr-dark);
+}
+
+@media (min-width: 992px) and (min-height: 650px) {
+  html {
+    scroll-snap-type: y mandatory;
+  }
 }
 
 /* ----------------- Header ------------------- */
@@ -68,7 +75,7 @@ main {
 }
 
 section {
-  width: 100%;
+  width: 100vw;
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -105,6 +112,12 @@ section {
 }
 #issue-1 {
   background-color: var(--clr-red);
+}
+
+@media (min-width: 992px) and (min-height: 650px) {
+  section {
+    scroll-snap-align: start;
+  }
 }
 
 /* ----------------- Footer ------------------- */
