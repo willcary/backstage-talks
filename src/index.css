@@ -24,9 +24,35 @@ body {
   -moz-osx-font-smoothing: grayscale;
   font-size: 18px;
   color: var(--clr-dark);
+}
+
+.app {
+  transition: background-color 700ms ease-in-out;
+}
+
+.teal {
+  background-color: var(--clr-teal);
+}
+.orange {
+  background-color: var(--clr-orange);
+}
+.yellow {
+  background-color: var(--clr-yellow);
+}
+.blue {
+  background-color: var(--clr-blue);
+}
+.red {
   background-color: var(--clr-red);
 }
 
+@media (min-width: 992px) and (min-height: 600px) {
+  html {
+    scroll-snap-type: y mandatory;
+  }
+}
+
+/* ----------------- Typography ------------------- */
 p {
   font-weight: bold;
 }
@@ -37,12 +63,6 @@ a {
 
 a:hover {
   color: var(--clr-dark);
-}
-
-@media (min-width: 992px) and (min-height: 650px) {
-  html {
-    scroll-snap-type: y mandatory;
-  }
 }
 
 /* ----------------- Header ------------------- */
@@ -72,7 +92,6 @@ header {
 /* ----------------- Main ------------------- */
 main {
   text-align: center;
-  transition: background-color 800ms ease-in-out;
 }
 
 section {
@@ -99,23 +118,7 @@ section {
   height: auto;
 }
 
-.teal {
-  background-color: var(--clr-teal);
-}
-.orange {
-  background-color: var(--clr-orange);
-}
-.yellow {
-  background-color: var(--clr-yellow);
-}
-.blue {
-  background-color: var(--clr-blue);
-}
-.red {
-  background-color: var(--clr-red);
-}
-
-@media (min-width: 992px) {
+@media (min-width: 992px) and (min-height: 600px) {
   section {
     scroll-snap-align: start;
   }
@@ -123,16 +126,12 @@ section {
 
 /* ----------------- Footer ------------------- */
 footer {
-  background-color: var(--clr-red);
   text-align: center;
+  padding: 0 1rem 2rem 1rem;
 }
 
 .description a:hover {
   text-decoration: none;
-}
-
-.contact {
-  position: fixed;
 }
 
 .menu {
@@ -144,6 +143,10 @@ footer {
   text-decoration: none;
 }
 
+.privacy-policy {
+  margin: 0;
+}
+
 .contact > a {
   text-decoration: none;
 }
@@ -153,10 +156,25 @@ footer {
   text-decoration: underline;
 }
 
-@media (min-width: 992px) {
+@media (min-width: 768px) {
   footer {
     text-align: left;
+    padding: 0;
+    display: flex;
   }
+
+  .description {
+    max-width: 320px;
+  }
+
+  .contact {
+  }
+}
+
+@media (min-width: 992px) {
+  /* footer {
+    text-align: left;
+  } */
 
   .menu,
   .description,
@@ -166,20 +184,17 @@ footer {
 
   .menu {
     display: block;
-    position: fixed;
     right: 15px;
     bottom: 0;
   }
 
   .description {
     max-width: 320px;
-    position: fixed;
     left: 15px;
     bottom: 0;
   }
 
   .contact {
-    position: fixed;
     right: 15px;
     top: 15px;
   }
