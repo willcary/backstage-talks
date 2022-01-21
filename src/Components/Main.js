@@ -5,7 +5,6 @@ import issue4 from '.././assets/images/backstagetalks_cover_issue_4.png'
 import issue3 from '.././assets/images/backstagetalks_cover_issue_3.png'
 import issue2 from '.././assets/images/backstagetalks_cover2017.png'
 import issue1 from '.././assets/images/backstagetalks_cover2016_n.png'
-// import COLORS from "../assets/js/COLORS.js"
 
 const Main = () => {
     const [color, setColor] = useState('teal');
