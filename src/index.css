@@ -28,6 +28,7 @@ body {
 
 .app {
   transition: background-color 700ms ease-in-out;
+  margin: 0;
 }
 
 .teal {
@@ -65,6 +66,10 @@ a:hover {
   color: var(--clr-dark);
 }
 
+small {
+  font-size: 12px;
+}
+
 /* ----------------- Header ------------------- */
 
 header > img {
@@ -73,8 +78,8 @@ header > img {
 
 header {
   position: absolute;
-  left: 15px;
-  top: 15px;
+  left: 16px;
+  top: 16px;
 }
 
 @media (min-width: 767px) {
@@ -95,7 +100,7 @@ main {
 }
 
 section {
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -122,12 +127,20 @@ section {
   section {
     scroll-snap-align: start;
   }
+
+  .issue-img {
+    max-width: 420px;
+  }
 }
 
 /* ----------------- Footer ------------------- */
 footer {
   text-align: center;
-  padding: 0 1rem 2rem 1rem;
+  padding: 0 1rem 3rem 1rem;
+}
+
+.description > p:first-child {
+  margin: 0;
 }
 
 .description a:hover {
@@ -144,6 +157,10 @@ footer {
 }
 
 .privacy-policy {
+  margin: 1.5rem 0 3rem 0;
+}
+
+.contact {
   margin: 0;
 }
 
@@ -159,23 +176,22 @@ footer {
 @media (min-width: 768px) {
   footer {
     text-align: left;
-    padding: 0;
     display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 0 1rem 1rem 1rem;
   }
 
   .description {
-    max-width: 320px;
+    max-width: 300px;
   }
 
-  .contact {
+  .privacy-policy {
+    margin: 1.5rem 0 0 0;
   }
 }
 
 @media (min-width: 992px) {
-  /* footer {
-    text-align: left;
-  } */
-
   .menu,
   .description,
   .contact {
@@ -184,18 +200,17 @@ footer {
 
   .menu {
     display: block;
-    right: 15px;
+    right: 16px;
     bottom: 0;
   }
 
   .description {
-    max-width: 320px;
-    left: 15px;
-    bottom: 0;
+    left: 16px;
+    bottom: 16px;
   }
 
   .contact {
-    right: 15px;
-    top: 15px;
+    right: 16px;
+    top: 16px;
   }
 }
