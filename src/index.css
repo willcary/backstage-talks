@@ -72,6 +72,7 @@ header {
 /* ----------------- Main ------------------- */
 main {
   text-align: center;
+  transition: background-color 800ms ease-in-out;
 }
 
 section {
@@ -98,23 +99,23 @@ section {
   height: auto;
 }
 
-#issue-5 {
+.teal {
   background-color: var(--clr-teal);
 }
-#issue-4 {
+.orange {
   background-color: var(--clr-orange);
 }
-#issue-3 {
+.yellow {
   background-color: var(--clr-yellow);
 }
-#issue-2 {
+.blue {
   background-color: var(--clr-blue);
 }
-#issue-1 {
+.red {
   background-color: var(--clr-red);
 }
 
-@media (min-width: 992px) and (min-height: 650px) {
+@media (min-width: 992px) {
   section {
     scroll-snap-align: start;
   }
@@ -152,7 +153,7 @@ footer {
   text-decoration: underline;
 }
 
-@media (min-width: 992px) and (min-height: 650px) {
+@media (min-width: 992px) {
   footer {
     text-align: left;
   }

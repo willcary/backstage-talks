@@ -1,10 +1,3 @@
-const COLORS = {
-  teal: '#00c1b5',
-  yellow: '#ffbe00',
-  red: '#e30512',
-  orange: '#ff651a',
-  blue: '#1d3fbb',
-  dark: '#251d20'
-}
+const COLORS = ['#00c1b5', '#ffbe00', '#e30512', '#ff651a', '#1d3fbb', '#251d20']
 
 export default COLORS;
