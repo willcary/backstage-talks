@@ -27,7 +27,7 @@ body {
 }
 
 .app {
-  transition: background-color 700ms ease-in-out;
+  transition: background-color 500ms ease-in-out;
   margin: 0;
 }
 
@@ -50,6 +50,15 @@ body {
 @media (min-width: 992px) and (min-height: 600px) {
   html {
     scroll-snap-type: y mandatory;
+  }
+
+  body::-webkit-scrollbar {
+    display: none;
+  }
+
+  body {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
   }
 }
 

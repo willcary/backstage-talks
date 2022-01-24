@@ -1,6 +1,5 @@
 import React from 'react'
 
-// -------------------------------------------------------------------------Conditionally render text!
 const Issue = ({ img, id, number, available }) => {
     return (
         <section id={id}>
