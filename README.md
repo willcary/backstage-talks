@@ -1,6 +1,8 @@
-# Backstage Talks Recreation with Responsive Scroll Snapping and animated Background-Color Transitions
+# Backstage Talks Recreation with Scroll Snapping and Animated Background-Color Transitions
 
 This application is a recreation of the [Backstage Talks Magazine](https://backstagetalks.com/) website. It is one of the practice projects from [Frontend Practice](https://www.frontendpractice.com/project/backstage-talks). View my [version live](https://backstage-talks.netlify.app/).
+
+![Screenshot of the project on a large screen.](./src/assets/images/backstage-talks.JPG)
 
 ## Motivation
 
