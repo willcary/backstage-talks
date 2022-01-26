@@ -6,11 +6,11 @@ This application is a recreation of the [Backstage Talks Magazine](https://backs
 
 ## Motivation
 
-This project allowed be to practice and further hone my fronend dev skill recreating websites from a "template". I was able to practice using fixed positioning with the header and footer elements. It also gave me more practice within the react library creating reusable components. Each section, or magazine issue, was one reusable Issue component which rendered differently based on the props input to each intstance.
+This project allowed be to practice and further hone my front-end dev skill recreating websites from a "template". I was able to practice using fixed positioning with the header and footer elements. It also gave me more practice within the react library creating reusable components. Each section, or magazine issue, was one reusable Issue component which rendered differently based on the props input to each intstance.
 
 ## What I learned
 
-I learned how to implement Scroll Snapping with response to both screen width and height as well as hide the scroll bar when scroll snapping is active. I also learned how to animate background-color changes based on scroll position using the **window.scrollY** property of the Window interface.
+I learned how to implement Scroll Snapping with response to both screen width and height as well as hide the scroll bar when scroll snapping is active. I also figured out how to animate background-color changes based on scroll position using the **window.scrollY** property of the Window interface.
 
 ## Credits
 
