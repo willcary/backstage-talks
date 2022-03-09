@@ -47,7 +47,7 @@ body {
   background-color: var(--clr-red);
 }
 
-@media (min-width: 992px) and (min-height: 650px) {
+@media (min-width: 992px) {
   html {
     scroll-snap-type: y mandatory;
   }
@@ -109,7 +109,7 @@ header > img {
   }
 }
 
-@media (min-width: 992px) and (min-height: 650px) {
+@media (min-width: 992px) {
   header {
     position: fixed;
   }
@@ -154,7 +154,7 @@ section {
   height: auto;
 }
 
-@media (min-width: 992px) and (min-height: 650px) {
+@media (min-width: 992px) {
   section {
     scroll-snap-align: start;
     padding-top: 0;
@@ -213,7 +213,7 @@ footer {
   }
 }
 
-@media (min-width: 992px) and (min-height: 650px) {
+@media (min-width: 992px) {
   .description,
   .contact {
     position: fixed;
@@ -258,7 +258,7 @@ footer {
   display: none;
 }
 
-@media (min-width: 992px) and (min-height: 650px) {
+@media (min-width: 992px) {
   .menu {
     position: fixed;
   }
