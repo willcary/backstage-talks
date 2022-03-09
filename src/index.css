@@ -81,25 +81,45 @@ small {
 
 /* ----------------- Header ------------------- */
 
-header > img {
-  width: 160px;
-}
-
 header {
   position: absolute;
   left: 16px;
   top: 16px;
 }
 
+header > img {
+  width: 160px;
+  border: none;
+  background-color: transparent;
+  cursor: default;
+}
+
+.logo-mobile {
+  display: inline;
+}
+
+.logo-wide {
+  display: none;
+}
+
 @media (min-width: 767px) {
   header > img {
     width: 260px;
+    margin-bottom: 6px;
   }
 }
 
 @media (min-width: 992px) and (min-height: 650px) {
   header {
     position: fixed;
+  }
+
+  .logo-mobile {
+    display: none;
+  }
+
+  .logo-wide {
+    display: inline;
   }
 }
 
@@ -159,15 +179,6 @@ footer {
   text-decoration: none;
 }
 
-.menu {
-  display: none;
-  list-style: none;
-}
-
-.menulink {
-  text-decoration: none;
-}
-
 .privacy-policy {
   margin: 1.5rem 0 3rem 0;
 }
@@ -180,7 +191,6 @@ footer {
   text-decoration: none;
 }
 
-.menulink:hover,
 .contact > a:hover {
   text-decoration: underline;
 }
@@ -204,16 +214,9 @@ footer {
 }
 
 @media (min-width: 992px) and (min-height: 650px) {
-  .menu,
   .description,
   .contact {
     position: fixed;
-  }
-
-  .menu {
-    display: block;
-    right: 16px;
-    bottom: 0;
   }
 
   .description {
@@ -224,5 +227,53 @@ footer {
   .contact {
     right: 16px;
     top: 16px;
+  }
+}
+
+/* ----------------- Menu ------------------- */
+
+.menu {
+  position: relative;
+  display: none;
+  list-style: none;
+}
+
+.menulink {
+  text-decoration: none;
+}
+
+.menulink:hover {
+  text-decoration: underline;
+}
+
+.menu-mobile {
+  display: block;
+  padding: 6px 6px 6px 1rem;
+  border-radius: 2px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  z-index: 1;
+}
+
+.menu-wide {
+  display: none;
+}
+
+@media (min-width: 992px) and (min-height: 650px) {
+  .menu {
+    position: fixed;
+  }
+
+  .menu {
+    display: block;
+    right: 16px;
+    bottom: 0;
+  }
+
+  .menu-wide {
+    display: block;
+  }
+
+  .menu-mobile {
+    display: none;
   }
 }

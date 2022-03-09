@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 
 const Issue = ({ img, id, number, available }) => {
     return (
@@ -12,6 +13,13 @@ const Issue = ({ img, id, number, available }) => {
             </p>
         </section>
     )
+}
+
+Issue.propTypes = {
+    img: PropTypes.string,
+    id: PropTypes.string,
+    number: PropTypes.string,
+    available: PropTypes.bool
 }
 
 export default Issue

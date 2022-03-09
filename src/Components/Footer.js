@@ -1,4 +1,5 @@
 import React from 'react'
+import Menu from './Menu'
 
 const Footer = () => {
     return (
@@ -9,13 +10,7 @@ const Footer = () => {
                 <p className="privacy-policy"><a href="https://backstagetalks.com/privacy-policy.php">Privacy Policy</a></p>
             </div>
 
-            <ul className="menu">
-                <li><a className="menulink" href="#issue-5">Issue #5</a></li>
-                <li><a className="menulink" href="#issue-4">Issue #4</a></li>
-                <li><a className="menulink" href="#issue-3">Issue #3</a></li>
-                <li><a className="menulink" href="#issue-2">Issue #2</a></li>
-                <li><a className="menulink" href="#issue-1">Issue #1</a></li>
-            </ul>
+            <Menu display="menu-wide" />
             <p className="contact"><a href="mailto:info@backstagetalks.com">info@backstagetalks.com</a></p>
         </footer>
     )
